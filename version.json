@@ -1,0 +1,8 @@
+{
+  "engine": {
+    "latest": "0.1.0",
+    "minimum": "0.1.0",
+    "url": "https://github.com/klipscribe/klipscribe.github.io/releases/latest/download/KlipscribeEngine.exe",
+    "notes": "Initial release."
+  }
+}
