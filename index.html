@@ -131,6 +131,8 @@
     .step::before { counter-increment: s; content: counter(s); position: absolute; top: 20px; right: 22px; font: 800 30px "Bricolage Grotesque"; color: var(--accent-soft); }
     .step h3 { font-size: 17px; }
     .step p { color: var(--muted); margin: 8px 0 0; font-size: 15px; }
+    .steps-one { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
+    .steps-one .step::before { display: none; }  /* no step number for a single step */
 
     /* pricing */
     .prices { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 760px; margin: 0 auto; }
@@ -256,20 +258,15 @@
 
   <section id="get">
     <div class="wrap">
-      <div class="sec-head"><h2>Get Klipscribe in 2 steps</h2><p>Free to start. Works on Chrome, Edge, Brave, Opera &amp; other Chromium browsers (Windows). Takes about a minute.</p></div>
-      <div class="steps">
-        <div class="step reveal">
-          <h3>Install the Klipscribe app</h3>
-          <p>The free engine that does the transcribing right on your own computer. One click - it installs itself and runs quietly in the background. No Python, no setup, no terminal.</p>
-          <div style="margin-top:16px"><a class="btn btn-primary js-download" href="#">Download for Windows</a></div>
-        </div>
+      <div class="sec-head"><h2>Get Klipscribe</h2><p>Free to start. Works on Chrome, Edge, Brave, Opera &amp; other Chromium browsers. Takes seconds.</p></div>
+      <div class="steps steps-one">
         <div class="step reveal">
           <h3>Add the browser extension</h3>
-          <p>Adds the Transcribe button to every video in Chrome or Edge. That's it - open any video and click.</p>
-          <div style="margin-top:16px"><a class="btn btn-ghost js-store" href="#">Add to browser</a></div>
+          <p>Adds a Transcribe button to every video in your browser. Open any video and click - that's it.</p>
+          <div style="margin-top:16px"><a class="btn btn-primary js-store" href="#">Add to browser</a></div>
         </div>
       </div>
-      <p class="note reveal" style="text-align:center;margin-top:22px">macOS &amp; Linux coming soon. 100% private - your audio never leaves your computer.</p>
+      <p class="note reveal" style="text-align:center;margin-top:22px">Free plan included. Available on all Chromium browsers.</p>
     </div>
   </section>
 
